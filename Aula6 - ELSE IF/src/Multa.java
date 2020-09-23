@@ -4,8 +4,8 @@ public class Multa {
 	public static void main(String[] args) {
 		Scanner s = new Scanner (System.in);
 	    float velo_carro, velo_via, relacao;
-	    velo_via = s.nextFloat();
-	    velo_carro = s.nextFloat();
+	    velo_via = Float.parseFloat(s.nextLine());
+	    velo_carro = Float.parseFloat(s.nextLine());
 	    relacao = velo_carro/velo_via;
 	    if (relacao>1) {
 	    	if (relacao > 1 && relacao <= 1.2) {
